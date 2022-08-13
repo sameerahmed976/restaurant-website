@@ -182,22 +182,15 @@ p {
   /* margin-bottom: 0.1rem; */
 }
 
-.hero-heading {
-  max-width: 90vw;
-}
-
 /* hero */
 .hero {
   background: url("/hero.jpg") no-repeat center/cover;
-  min-height: 100vh;
+  min-height: calc(100vh - 5rem);
   display: grid;
-  place-items: center;
-  z-index: -1;
+  justify-content: center;
+  align-items: start;
+  padding-top: 10rem;
   position: relative;
-}
-
-.hero-content {
-  max-width: 100%;
 }
 
 .hero-content h1 {
@@ -208,30 +201,31 @@ p {
   font-weight: bold;
   font-family: var(--regular-font);
   text-shadow: 1px 2px 2px #fff;
+  max-width: 80vw;
 }
 
 .btn {
   display: block;
-  text-align: center;
-  padding: 0.5rem 1rem;
-  font-size: var(--font-size-s-h4);
-  margin: 0 auto;
-  margin-top: 2rem;
-  background-color: var(--btn-color);
-  font-weight: bold;
-  letter-spacing: 2px;
-  border-radius: 0.5rem;
-  transition: var(--transition-8);
-  border: 2px solid white;
   cursor: pointer;
+  background-color: var(--btn-color);
   color: white;
+  font-size: var(--font-size-s-h4);
+  padding: 0.5rem;
+  font-weight: bold;
+  border: 2px solid white;
+  margin: 0 auto;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: var(--transition-8);
+  border-radius: 0.5rem;
+  width: 50%;
 }
 
 .btn:hover {
-  transform: translateY(5%);
-  background: transparent;
-  background-color: white;
   color: var(--primary-color);
+  background-color: whitesmoke;
+  border: 2px solid var(--btn-color);
+  transform: translateY(5%);
 }
 
 /*  mobile 576px and up */
