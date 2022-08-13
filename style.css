@@ -99,6 +99,7 @@
   --secondary-color: #61baad;
   --heading-color: #4b8178;
   --background-color: #c3fcf2;
+  --btn-color: #60bf26;
 
   --btn-gradient: linear-gradient(220.55deg, #ffd439 0%, #ff7a00 100%);
 }
@@ -158,6 +159,33 @@ p {
   font-size: var(--font-size-s-h5);
 }
 
+/* navbar */
+
+.navbar-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 0.5rem;
+  padding-right: 1.5rem;
+  min-height: 5rem;
+}
+
+.logo-image {
+  height: 50px;
+  cursor: pointer;
+}
+
+.navbar-center i {
+  cursor: pointer;
+  font-size: var(--font-size-s-h2);
+  color: var(--secondary-color);
+  /* margin-bottom: 0.1rem; */
+}
+
+.hero-heading {
+  max-width: 90vw;
+}
+
 /* hero */
 .hero {
   background: url("/hero.jpg") no-repeat center/cover;
@@ -165,6 +193,7 @@ p {
   display: grid;
   place-items: center;
   z-index: -1;
+  position: relative;
 }
 
 .hero-content {
@@ -188,14 +217,14 @@ p {
   font-size: var(--font-size-s-h4);
   margin: 0 auto;
   margin-top: 2rem;
-  background: var(--btn-gradient);
-  color: white;
+  background-color: var(--btn-color);
   font-weight: bold;
   letter-spacing: 2px;
   border-radius: 0.5rem;
   transition: var(--transition-8);
   border: 2px solid white;
   cursor: pointer;
+  color: white;
 }
 
 .btn:hover {
