@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Roboto+Mono:wght@300;400;500;600;700&display=swap");
+
+:root {
+  /* Typography */
+  --regular-font: "Lato", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+
+  --heading-font: "Roboto Mono", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    monospace, sans-serif;
+
+  /* h5 font size paragraph */
+  /* start of for small mobile  (576px and down) */
+  /* start of for mobile  (576px and up) */
+
+  /* start of for mobile */
+
+  --font-size-s-h1: 2.488rem;
+
+  --font-size-s-h2: 2.074rem;
+
+  --font-size-s-h3: 1.728rem;
+
+  --font-size-s-h4: 1.44rem;
+
+  --font-size-s-h5: 1.2rem;
+
+  /* major third 1.200 */
+  /* end of for mobile */
+
+  /* start of for tablet  (768px and up) */
+
+  /* h5 font size paragraph */
+
+  /* start of for mobile */
+
+  --font-size-m-h1: 3.052rem;
+
+  --font-size-m-h2: 2.441rem;
+
+  --font-size-m-h3: 1.953rem;
+
+  --font-size-m-h4: 1.563rem;
+
+  --font-size-m-h5: 1.25rem;
+  /* major third 1.250 */
+  /* end of for mobile */
+
+  /* start of for tablet  (992px and up) */
+
+  --font-size-l-h1: 4.209rem;
+
+  --font-size-l-h2: 3.157rem;
+
+  --font-size-l-h3: 2.369rem;
+
+  --font-size-l-h4: 1.777rem;
+
+  --font-size-l-h5: 1.333rem;
+  /* Perfect Fourth 1.333 */
+  /* end of for tablet */
+
+  /* start of for laptop  (1200px and up) */
+
+  --font-size-xl-h1: 5.653rem;
+
+  --font-size-xl-h2: 3.998rem;
+
+  --font-size-xl-h3: 2.827rem;
+
+  --font-size-xl-h4: 1.999rem;
+
+  --font-size-xl-h5: 1.414rem;
+  /* Augmented Fourth 1.414 */
+  /* end of for laptop */
+
+  /* start of for large desktop  (1400px and up) */
+
+  --font-size-xxl-h1: 7.594rem;
+
+  --font-size-xxl-h2: 5.063rem;
+
+  --font-size-xxl-h3: 3.75rem;
+
+  --font-size-xxl-h4: 2.25rem;
+
+  --font-size-xxl-h5: 1.5rem;
+  /* Augmented fifth 1.5 */
+
+  /* end of for large desktop */
+  --font-size-h6: 1rem;
+
+  --line-height: 1.5;
+
+  --box-shadow-1: 2px 4px 6px #000;
+
+  --transition-8: all 0.8s ease-in-out;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--regular-font);
+  font-size: 100%;
+  /* font size :16px */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+/* mobile */
+
+h1 {
+  font-size: var(--font-size-s-h1);
+}
+h2 {
+  font-size: var(--font-size-s-h2);
+}
+h3 {
+  font-size: var(--font-size-s-h3);
+}
+h4 {
+  font-size: var(--font-size-s-h4);
+}
+h5 {
+  font-size: var(--font-size-s-h5);
+}
+h6 {
+  font-size: var(--font-size-s-h6);
+}
+p {
+  font-size: var(--font-size-s-h5);
+}
+
+/* hero */
+.hero {
+  background: url("/hero.jpg") no-repeat center/cover;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.hero-content {
+  max-width: 100%;
+}
+
+.hero-content h1 {
+  color: whitesmoke;
+  letter-spacing: 2px;
+  text-align: center;
+  line-height: 1.2;
+  font-weight: bold;
+  font-family: var(--regular-font);
+}
+
+/*  mobile 576px and up */
+@media only screen and (min-width: 576px) {
+}
+/*  tablet 768px and up */
+@media only screen and (min-width: 768px) {
+}
+
+/*  tablet 992px and up */
+@media only screen and (min-width: 992px) {
+}
+
+/*  desktop 1200px and up */
+@media only screen and (min-width: 1200px) {
+}
+/* large desktop 1200px and up */
+@media only screen and (min-width: 1400px) {
+}
